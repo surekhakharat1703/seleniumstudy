@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
+  <reporter-output>
+    <line>
+      <![CDATA[ThisTC2execution started]]>
+    </line>
+    <line>
+      <![CDATA[ThisTC2method is Failed,pl try again]]>
+    </line>
+    <line>
+      <![CDATA[ThisTC1execution started]]>
+    </line>
+    <line>
+      <![CDATA[TC1 is running]]>
+    </line>
+    <line>
+      <![CDATA[ThisTC1 method completed successfully]]>
+    </line>
+    <line>
+      <![CDATA[ThisTC4execution started]]>
+    </line>
+    <line>
+      <![CDATA[TC4 is running]]>
+    </line>
+    <line>
+      <![CDATA[ThisTC4 method completed successfully]]>
+    </line>
+    <line>
+      <![CDATA[ThisTC3execution started]]>
+    </line>
+    <line>
+      <![CDATA[This TCTC3is skipped..plz check dependent method]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-06-29T19:10:24 IST" name="Default suite" finished-at="2023-06-29T19:10:25 IST" duration-ms="636">
+    <groups>
+    </groups>
+    <test started-at="2023-06-29T19:10:24 IST" name="Default test" finished-at="2023-06-29T19:10:25 IST" duration-ms="636">
+      <class name="listerner.SampleTest1">
+        <test-method signature="TC2()[pri:0, instance:listerner.SampleTest1@4145bad8]" started-at="2023-06-29T19:10:24 IST" name="TC2" finished-at="2023-06-29T19:10:25 IST" duration-ms="525" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method listerner.SampleTest1.TC2() didn't finish within the time-out 500]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method listerner.SampleTest1.TC2() didn't finish within the time-out 500
+at java.base@17.0.5/java.lang.Thread.sleep(Native Method)
+at app//listerner.SampleTest1.TC2(SampleTest1.java:19)
+at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base@17.0.5/java.lang.reflect.Method.invoke(Method.java:568)
+at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base@17.0.5/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[ThisTC2execution started]]>
+            </line>
+            <line>
+              <![CDATA[ThisTC2method is Failed,pl try again]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC2 -->
+        <test-method signature="TC1()[pri:0, instance:listerner.SampleTest1@4145bad8]" started-at="2023-06-29T19:10:25 IST" name="TC1" finished-at="2023-06-29T19:10:25 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ThisTC1execution started]]>
+            </line>
+            <line>
+              <![CDATA[TC1 is running]]>
+            </line>
+            <line>
+              <![CDATA[ThisTC1 method completed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+        <test-method signature="TC4()[pri:0, instance:listerner.SampleTest1@4145bad8]" started-at="2023-06-29T19:10:25 IST" name="TC4" finished-at="2023-06-29T19:10:25 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ThisTC4execution started]]>
+            </line>
+            <line>
+              <![CDATA[TC4 is running]]>
+            </line>
+            <line>
+              <![CDATA[ThisTC4 method completed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC4 -->
+        <test-method signature="TC3()[pri:0, instance:listerner.SampleTest1@4145bad8]" started-at="2023-06-29T19:10:25 IST" name="TC3" finished-at="2023-06-29T19:10:25 IST" depends-on-methods="listerner.SampleTest1.TC2" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method listerner.SampleTest1.TC3() on instance listerner.SampleTest1@4145bad8 depends on not successfully finished methods 
+[listerner.SampleTest1.TC2() on instance listerner.SampleTest1@4145bad8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method listerner.SampleTest1.TC3() on instance listerner.SampleTest1@4145bad8 depends on not successfully finished methods 
+[listerner.SampleTest1.TC2() on instance listerner.SampleTest1@4145bad8]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+            <line>
+              <![CDATA[This TCTC3is skipped..plz check dependent method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC3 -->
+      </class> <!-- listerner.SampleTest1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
